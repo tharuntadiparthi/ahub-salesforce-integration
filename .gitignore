@@ -23,7 +23,6 @@ tmp/**/*
 local.properties
 .settings/
 .loadpath
-.project
 .classpath
 
 # External tool builders
@@ -45,3 +44,4 @@ target/
 .mule/
 .DS_Store
 velocity.log
+/bin/

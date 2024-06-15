@@ -7,6 +7,9 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="9595b82d-2b7e-4002-9875-48e5ddd3febb" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
+	<flow name="ahub-salesforce-integrationFlow1" doc:id="345e93d6-5e5b-4a67-bf7d-863af5eb8520" >
+		<http:listener doc:name="Listener" doc:id="c3b11ea4-7ed3-4d2a-9e02-0af75847ccf2" config-ref="HTTP_Listener_config" path="/tr"/>
+	</flow>
 	<flow name="ahub-salesforce-integrationFlow" doc:id="1267c42d-0a22-43a3-92a3-df521dcec0ec" >
 		<http:listener doc:name="Listener" doc:id="3a1a1e51-4672-4be7-91a2-7d3fa36d0b7c" config-ref="HTTP_Listener_config" path="/tharu"/>
 	</flow>
